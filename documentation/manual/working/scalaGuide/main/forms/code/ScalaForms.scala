@@ -87,7 +87,7 @@ class ScalaFormsSpec extends Specification with ControllerHelpers {
 
       //#userForm-constraints-2-with-errors
       val boundForm = userFormConstraints2.bind(Map("bob" -> "", "age" -> "25"))
-      boundForm.hasErrors must beTrue
+      boundForm.hasErrors must be true
       //#userForm-constraints-2-with-errors
     }
 
